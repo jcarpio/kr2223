@@ -1,0 +1,19 @@
+
+
+Scope of a variable?
+
+Is a line. After the dot the variable
+doesn't exist. 
+
+Once a variable take a value,
+it doesn't change until the end
+of the scope (the end of the line).
+
+
+'_' anonymous variable.
+I will when a need a value in this
+variable but I am not going to use it.
+
+Free Variable and Instanced Variable
+A Instance variable are linked to
+a value (are not free).
