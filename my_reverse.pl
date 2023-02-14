@@ -43,7 +43,7 @@ my_reverse([], []).
 %    P(n)               P(n-1) 
 
 my_reverse([Head|Tail], R2):-  my_reverse(Tail, R),
-                  append(R, [Tail], R2).
+                  append(R, [Head], R2).
    
 
 
