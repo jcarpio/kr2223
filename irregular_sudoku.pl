@@ -22,7 +22,7 @@
 	]).
 */
 
-soduku(Rows) :- length(Rows, 9),
+sudoku(Rows) :- length(Rows, 9),
     maplist(same_length(Rows), Rows),
 	append(Rows, Rs), Rs ins 1..9,
 	maplist(all_dictinct, Rows),
