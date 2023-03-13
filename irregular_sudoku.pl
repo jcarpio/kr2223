@@ -42,4 +42,15 @@ soduku(Rows) :- length(Rows, 9),
 		 ],
 		 all_dictinct([E11,E12,E13,E14,E15,E21,E22,E23,E24]),
 		 all_dictinct([E16,E17,E18,E19,E25,E26,E27,E28,E29]),
-		 all_dictinct([E31,E32,E41,E51,E52,E61,E62,E63,E71]),
+		 all_dictinct([E31,E32,E41,E51,E52,E61,E62,E63,E71]).
+		 
+		 
+irregular_sudoku1([
+                    [_,_,_,_,1,8,9,_,2],
+					[_,_,6,2,_,_,1,_,_],
+					[_,_,_,6,_,_,7,_,_],
+					[4,6,_,_,_,_,_,_,2],
+				  ]).
+				  
+				  
+% irregular_sudoku1(S), sudoku(S), maplist(labeling([ff]), S).
