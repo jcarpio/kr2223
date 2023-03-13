@@ -46,7 +46,7 @@ soduku(Rows) :- length(Rows, 9),
 		 all_dictinct([E35,E36,E37,E38,E46,E56,E57,E67,E68]),
 		 all_dictinct([E39,E47,E48,E49,E58,E59,E69,E78,E79]),		 
 		 all_dictinct([E81,E82,E83,E84,E85,E91,E92,E93,E94]),
-		 all_dictinct([E86,E87,E88,E89,E95,E96,E97,E98,E99]),
+		 all_dictinct([E86,E87,E88,E89,E95,E96,E97,E98,E99]).
 		 
 		 
 irregular_sudoku1([
