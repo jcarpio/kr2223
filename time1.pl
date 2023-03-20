@@ -1,4 +1,4 @@
-:- load_files('req.pl').
+:- load_files('req1.pl').
 
 classes(Classes) :-
        setof(C, S^N^T^class_subject_teacher_times(C,S,T,N), Classes).
