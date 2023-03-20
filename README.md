@@ -5,3 +5,6 @@ http://eu.swi-prolog.org/man/clpfd.html
 
 ## YouTube Channel for Declarative Programming
 https://www.youtube.com/@josecarpioc
+
+## The power of Prolog
+https://www.metalevel.at/prolog
