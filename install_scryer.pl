@@ -1,6 +1,6 @@
 Installing Scryer Prolog
 
-1. Install Ubuntu 20.04.LTS (Install server if low on disk space)
+1. Install Ubuntu 20.04.6 LTS (Install server if low on disk space)
 2. sudo apt-get update
 3. sudo apt-get install build-essential
 
