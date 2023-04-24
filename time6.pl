@@ -107,10 +107,10 @@ slot_quotient(S, Q) :-
         slots_per_day(SPD),
         Q #= S // SPD.
 
-list_without_nths(Lista, [], Lista).
+list_without_nths(List, [], List).
  
-list_without_nths(Lista, [Cab|Resto], R2):-
- list_without_nths(Lista, Resto, R), delete_pos(R, Cab, R2).
+list_without_nths(List, [Head|Tail], R2):-
+ list_without_nths(List, Tail, R), delete_pos(R, Head, R2).
    
 /*   
  delete_pos(+List, +Pos, -R)
