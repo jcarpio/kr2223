@@ -110,21 +110,21 @@ slot_quotient(S, Q) :-
 list_without_nths(Lista, [], Lista).
  
 list_without_nths(Lista, [Cab|Resto], R2):-
- list_without_nths(Lista, Resto, R), elimina_pos(R, Cab, R2).
+ list_without_nths(Lista, Resto, R), delete_pos(R, Cab, R2).
    
 /*   
- elimina_pos(+Lista, +Pos, -R)
-   es cierto si R unifica con una lista que contiene los elementos
-   de Lista exceptuando el que ocupa la posición Pos. Los
-   valores de posiciones empiezan en 0.
+ delete_pos(+List, +Pos, -R)
+   is true if R unifies with a list containing the elements
+   except for the one that occupies the position Pos. The
+   Position values ​​start at 0.
 */
 
- elimina_pos([], _, []).
+ delete_pos([], _, []).
  
- elimina_pos([_|Resto], 0, Resto).
+ delete_pos([_|Tail], 0, Tail).
  
- elimina_pos([Cab|Resto], Pos, [Cab|R]):- Pos > 0, Pos2 #= Pos - 1,
-   elimina_pos(Resto, Pos2, R).
+ delete_pos([Head|Tail], Pos, [Head|R]):- Pos > 0, Pos2 #= Pos - 1,
+   delete_pos(Tail, Pos2, R).
 		
 %:- list_without_nths("abcd", [3], "abc").
 %:- list_without_nths("abcd", [1,2], "ad").		
