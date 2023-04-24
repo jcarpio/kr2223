@@ -107,24 +107,10 @@ slot_quotient(S, Q) :-
         slots_per_day(SPD),
         Q #= S // SPD.
 
-/*		
-without_([], _, Es) --> seq(Es).
-without_([W|Ws], Pos0, [E|Es]) -->
-        { Pos #= Pos0 + 1,
-          zcompare(R, W, Pos0) },
-        without_at_pos0(R, E, [W|Ws], Ws1),
-        without_(Ws1, Pos, Es).
-without_at_pos0(=, _, [_|Ws], Ws) --> [].
-without_at_pos0(>, E, Ws0, Ws0) --> [E].
-*/
-
-% list_without_nths(Es0, Ws, Es) :-
-%        phrase(without_(Ws, 0, Es0), Es).
-
- list_without_nths(Lista, [], Lista).
+list_without_nths(Lista, [], Lista).
  
- list_without_nths(Lista, [Cab|Resto], R2):-
-   list_without_nths(Lista, Resto, R), elimina_pos(R, Cab, R2).
+list_without_nths(Lista, [Cab|Resto], R2):-
+ list_without_nths(Lista, Resto, R), elimina_pos(R, Cab, R2).
    
 /*   
  elimina_pos(+Lista, +Pos, -R)
