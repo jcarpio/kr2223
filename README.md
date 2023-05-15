@@ -4,6 +4,9 @@
 ### AI Olympics games schedule
 https://github.com/Hugolacaze/kr2223_olympics_games
 
+### AI Finance
+https://github.com/jcarpio/kr2223_finance
+
 
 ## Links
 ### Swi Prolog: library(clpfd)
